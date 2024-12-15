@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan',sans-serif;
+    flex-wrap: wrap;
+}
+.menu i{
+    font-size: 30px;
+    display: none;
+}
+header{
+    background-color: rgb(13, 36, 57);
+    display: block;
+}
+.aa{
+    padding: 17px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 16px;
+    font-size: 18px;   
+
+}
+.aa:hover{
+    color: rgb(212, 212, 212);
+    text-decoration: underline;
+    text-shadow: 5px 2px 5px #818181;
+    transition: 0.3s;
+    
+}
+.aa:hover::after{
+    color: rgb(212, 212, 212);
+    text-decoration: underline;
+    text-shadow: 5px 2px 5px #818181;
+}
+.head{
+    padding: 20px;
+    height: 100px;
+}
+.Login{
+    position: absolute;
+    margin-bottom: 30px;
+    right: 50px;
+    width: 100px;
+    height: 40px;
+    top: 30px;
+    background: transparent;
+    text-decoration: none;
+    border: 2px solid #585858;
+    border-radius: 6px;
+    font-size: 1.1em;
+    color: #ffffff;
+    margin-left: 50px;
+    backdrop-filter: blur(20px);
+}
+.Login:hover{
+    box-shadow: 5px 3px 10px #706969;
+    transition: 0.5s;
+}
+#hero {
+    background-image: url(Picsart_24-12-05_15-36-05-857.png);
+    width: 100%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+}
+#hero h4 {
+    padding-bottom: 15px;
+}
+#hero h1 {
+    color: #088178;
+    font-size: 48px;
+}
+#hero button {
+    background-image: url(button.png);
+    background-color: transparent;
+    color: #088178;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+#feature .fe-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+#feature .fe-box:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+#feature .fe-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+}
+#feature .fe-box:nth-child(2) h6 {
+    background-color: #cdebbc;
+}
+#feature .fe-box:nth-child(3) h6 {
+    background-color: #d1e8f2;
+}
+#feature .fe-box:nth-child(4) h6 {
+    background-color: #cdd4f8;
+}
+#feature .fe-box:nth-child(5) h6 {
+    background-color: #f6dbf6;
+}
+#feature .fe-box:nth-child(6) h6 {
+    background-color: #fff2e5;
+}
+.box-1 img{
+    width: 199px;
+    border-radius: 8px;
+}
+.box-2 img{
+    width: 200px;
+    border-radius: 8px;   
+}
+.box-1{
+    text-align: center;
+    border: 1px rgb(199, 249, 255) solid;
+    height: 380px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 4px #b0b0b0;
+    margin: 20px;
+}
+h4{
+    padding: 8px;
+}
+.box-2{
+    text-align: center;
+    border: 1px rgb(199, 249, 255) solid;
+    height: 380px;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 4px #b0b0b0;
+    margin: 20px;
+}
+.box-1:hover{
+    box-shadow: 3px 3px 4px #706969;
+    transition: 0.5s;
+    
+}
+.box-2:hover{
+    box-shadow: 3px 3px 4px #706969;
+    transition: 0.5s; 
+}
+.teams{
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.prod h2,p{
+    text-align: center;
+    color: #088178;
+    
+}
+.shop{
+    position: relative;
+    margin-bottom: 30px;
+    justify-content: center;
+    right: 25px;
+    width: 100px;
+    height: 40px;
+    bottom: 10px;
+    background: transparent;
+    border: 2px solid #9b9696;
+    border-radius: 100%;
+    font-size: 1.1em;
+    color: #ff0202;
+    margin-left: 50px;
+    backdrop-filter: blur(20px);
+}
+.shop:hover{
+    background-color: #088178;
+    transition: 0.5s;
+    box-shadow: 3px 4px 5px #b0b0b0;
+    color: white;
+}
+.box-1 h3,h4 , .box-2 h3,h4{
+    color:#088178;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer .logo {
+    margin-bottom: 30px;
+}
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin: 0 0 10px 0;
+}
+footer .follow {
+    margin-top: 20px;
+}
+footer .follow i{
+    color: #465b52;
+    padding-right: 4px;
+    cursor: pointer;
+}
+footer .install .row img{
+    border: 1px solid #088178;
+    border-radius: 6px;
+    margin: 10px 0 15px 0;
+}
+footer .follow i:hover,
+footer a:hover {
+    color: #088178;
+}
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+.section-p1 {
+    padding: 40px 80px;
+}
+#ftr{
+    background-color: rgb(255, 81, 55);
+}
+.container1{
+    overflow: hidden;
+}
+#page-header {
+    
+    width: 120%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    margin: 0 0 10px 0;
+    background-color: #cdd4f8;
+    height: 300px;
+}
+#page-header h2,
+#page-header p {
+    color: #00dabd;
+    position: relative;
+    right: 400px;
+    font-size: 30px;
+}
+#page-header img{
+    position: absolute;
+    right: 300px;
+    width: 200px;
+    height: 298px;
+}
+#pagination {
+    text-align: center;
+}
+legend{
+    text-align: center;
+    font-size: 40px;
+    color: #00dabd;
+    
+}
+fieldset{
+    margin:0 10px 10px 0;
+}
+.close-btn {
+    display: none;
+}
+.head #closeHeader{
+    display: none;
+}
+@media (max-width: 779px){
+    h1 {
+        font-size: 38px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    #hero {
+        width: 100%;
+        text-align: center;
+    }
+    .teams .box-1,.box-2{
+        margin: 20px;
+        height: auto;
+    }
+    a {
+        font-size: 16px; 
+    }
+    #feature {
+        flex-direction: column;
+        align-items: center;
+    }
+    #feature .fe-box {
+        width: 90%;
+    }
+    .menu i {
+        display: block; 
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        padding: 6px;
+    }
+    .menu i:hover {
+        background-color: #cecece;
+        width: 40px;
+        border-radius: 100%;
+    }
+    .close-btn {
+        display: flex;
+        position: absolute;
+        right: 30px;
+        font-size: 30px;
+        border-radius: 100%;
+        color: rgb(0, 0, 0);
+    }
+    header .head .aa, #btnn{
+        display: block;
+    }
+    #btnn{
+        position: relative;
+        top: 10px;
+    }
+    header{
+        position: absolute;
+        flex-direction: column;
+        
+    }
+
+    .head {
+        background-color: rgb(13, 36, 57);
+        height: 350px;
+        max-width: 200px;
+        position: absolute;
+        display: block;
+        flex-direction: column;
+        z-index: 5;
+    }
+    .head #closeHeader{
+        display: flex;
+    }
+    .pp{
+        z-index: 1;
+        display: none;
+    }
+    
+}
+@media (max-width: 600px){
+    h1 {
+        font-size: 38px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    #hero {
+        width: 100%;
+        text-align: center;
+    }
+    .teams .box-1,.box-2{
+        margin: 20px;
+        height: auto;
+    }
+    a {
+        font-size: 16px; 
+    }
+    #feature {
+        flex-direction: column;
+        align-items: center;
+    }
+    #feature .fe-box {
+        width: 90%;
+    }
+    .menu i {
+        display: block; 
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        padding: 6px;
+    }
+    .menu i:hover {
+        background-color: #cecece;
+        width: 40px;
+        border-radius: 100%;
+    }
+    .close-btn {
+        display: flex;
+        position: absolute;
+        right: 30px;
+        font-size: 30px;
+        border-radius: 100%;
+        color: rgb(0, 0, 0);
+    }
+    header .head .aa, #btnn{
+        display: block;
+    }
+    #btnn{
+        position: relative;
+        top: 10px;
+    }
+    header{
+        position: absolute;
+        flex-direction: column;
+        
+    }
+
+    .head {
+        background-color: rgb(13, 36, 57);
+        height: 350px;
+        max-width: 200px;
+        position: absolute;
+        display: block;
+        flex-direction: column;
+        z-index: 5;
+    }
+    .head #closeHeader{
+        display: flex;
+    }
+    .pp{
+        z-index: 1;
+        display: none;
+    }
+    
+}
+
+.navbar {
+    background-color: rgb(13, 36, 57);
+}
+.sp{
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 16px;
+    font-size: 18px;  
+}
+.sp:hover{
+    color: rgb(212, 212, 212);
+    text-decoration: underline;
+    text-shadow: 5px 2px 5px #818181;
+    transition: 0.3s;
+}
+.head a,.ss,.sp{
+    display: inline;
+}
+.ss {
+    position: relative;
+    display: inline-block;
+}
+.ss .sp {
+    padding: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top: 16px;
+    font-size: 18px;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 150%;
+    left: 0;
+    background-color:#00dabd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding: 10px 0;
+    width: 160px;
+    border-radius: 4px;
+}
+.dropdown a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.dropdown a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    text-shadow: 5px 2px 5px #818181;
+    transition: 0.3s;
+}
+.close-bt{
+    border-radius: 100%;
+    font-size: 20px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    
+}
+.pp{
+    z-index: 1;
+    text-align: center;
+}

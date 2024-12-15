@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Node Ajax email form</title>
+    <link rel="stylesheet" href="contact.css">
+ 
+</head>
+
+<body>
+    
+        <img src="logo.webp" alt="">
+
+    <div class="container">
+        <div id="status">Message Sent</div>
+        <form>
+            <input required maxlength="30" type="text" placeholder="Name" name="name">
+            <input required maxlength="50" type="email" placeholder="Email" name="email">
+            <textarea required maxlength="600" name="message" placeholder="Type Your Message Here"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const form = document.querySelector("form");
+        const status = document.querySelector("#status");
+        const formBtn = document.querySelector("form>button")
+        
+        const displayStatus = (res)=>{
+            status.innerHTML = res.status;
+            status.style.display = "block";
+            formBtn.innerHTML = "Send";
+            form.reset()
+            setTimeout(() => {
+                status.style.display = "none";
+            }, 3000);
+        }
+        const newReq = post => {
+            const options = {
+                method: 'POST',
+                body: JSON.stringify(post),
+                headers: new Headers({
+                    'Content-Type': 'application/json'
+                })
+            }
+            return fetch(`/contact`, options)
+            .then(res => res.json())
+            .then(res => displayStatus(res))
+            .catch(error => console.log(error));
+        }
+        form.addEventListener('submit', (e) => {
+            e.preventDefault()
+            formBtn.innerHTML = "Sending..."
+            let post = {
+                name: form.elements["name"].value,
+                email: form.elements["email"].value,
+                message: form.elements["message"].value
+            }
+            newReq(post)
+        })
+    })
+    </script>
+</body>
+
+</html>
